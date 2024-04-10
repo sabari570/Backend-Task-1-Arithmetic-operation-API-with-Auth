@@ -15,5 +15,5 @@ app.use(express.json());
 app.listen(PORT, () => console.log("SERVER CONNECTED AT PORT: ", PORT));
 
 // To use the routes defined inside authRoutes
-app.use('/api', authRoutes);
+app.use('/api/auth', authRoutes);
 app.use('/api', operationRoutes);
